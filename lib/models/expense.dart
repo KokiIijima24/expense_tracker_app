@@ -17,7 +17,10 @@ class Expense {
   final DateTime date;
   final Category category; // leisure Expense(vategory: 'leasute')
 
-  Expense(this.category,
-      {required this.title, required this.amount, required this.date})
+  Expense(
+      {required this.category,
+      required this.title,
+      required this.amount,
+      required this.date})
       : id = uuid.v4();
 }
