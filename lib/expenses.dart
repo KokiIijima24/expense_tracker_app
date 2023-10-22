@@ -13,12 +13,14 @@ class _ExpensesState extends State<Expenses> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Expenses'),
-      ),
-      body: const Center(
-        child: Text('Expenses'),
-      ),
-    );
+        appBar: AppBar(
+          title: const Text('Expenses'),
+        ),
+        body: const Column(
+          children: [
+            Text('The Chart'),
+            Text('Expenses list'),
+          ],
+        ));
   }
 }
